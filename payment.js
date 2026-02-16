@@ -5,7 +5,7 @@ const GOOGLE_SHEETS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbz25e
 // Pricing configuration
 const pricingConfig = {
     standard: {
-        amount: 4000, // Amount in kobo (₦40)
+        amount: 400000, // Amount in kobo (₦4,000)
         name: 'Weekend Intensive'
     },
     premium: {
