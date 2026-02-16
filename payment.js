@@ -1,6 +1,6 @@
 // IMPORTANT: Replace 'YOUR_PAYSTACK_PUBLIC_KEY' with your actual Paystack public key
 const PAYSTACK_PUBLIC_KEY = 'pk_live_051bcbe2840110639b09a2ef72b70fdbcf6a6220'; // Replace with your key
-const GOOGLE_SHEETS_WEB_APP_URL = 'YOUR_GOOGLE_SCRIPT_WEB_APP_URL'; // Replace with your Google Apps Script Web App URL
+const GOOGLE_SHEETS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbz25ecFClKxzKxQqrItFVFThGiPDET0wdsBPNBgKD1h9WPoBwqCWxJEIfF7wkeZ74Uq/exec'; // Replace with your Google Apps Script Web App URL
 
 // Pricing configuration
 const pricingConfig = {
