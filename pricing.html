@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Lius Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pricing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+<body>
+    <!-- Skeleton Loader -->
+    <div id="skeleton-loader" class="skeleton-loader">
+        <div class="skeleton-content">
+            <div class="skeleton-logo"></div>
+            <div class="skeleton-nav">
+                <div class="skeleton-nav-item"></div>
+                <div class="skeleton-nav-item"></div>
+                <div class="skeleton-nav-item"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="logo-placeholder.svg" alt="Lius Hub" id="logo-img" class="logo-image">
+                    <span class="logo-text">Lius Hub</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="course.html" class="nav-link">Course Details</a>
+                    <a href="pricing.html" class="nav-link active">Pricing</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="portal.html" class="nav-link nav-cta">Student Portal</a>
+                </div>
+                <button class="mobile-toggle" id="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pricing Hero -->
+    <section class="pricing-hero">
+        <div class="container">
+            <div class="pricing-hero-content fade-in">
+                <h1 class="pricing-hero-title">Simple, Transparent Pricing</h1>
+                <p class="pricing-hero-subtitle">Invest in your future as a graphic designer. One upfront payment, lifetime access.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="pricing-grid">
+                <div class="pricing-card scroll-reveal">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Weekend Intensive</h3>
+                        <div class="pricing-amount">
+                            <span class="currency">₦</span>
+                            <span class="price">75,000</span>
+                        </div>
+                        <p class="pricing-description">Complete graphic design bootcamp</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>48 hours of intensive training</li>
+                        <li>All course materials & templates</li>
+                        <li>Certificate of completion</li>
+                        <li>Lifetime access to recordings</li>
+                        <li>Private student community</li>
+                        <li>Career support & mentorship</li>
+                        <li>Portfolio review sessions</li>
+                        <li>Design assets library</li>
+                    </ul>
+                    <button class="btn btn-primary pricing-btn" onclick="initiatePayment('standard')">
+                        Enroll Now
+                    </button>
+                </div>
+
+                <div class="pricing-card featured scroll-reveal">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Premium Package</h3>
+                        <div class="pricing-amount">
+                            <span class="currency">₦</span>
+                            <span class="price">120,000</span>
+                        </div>
+                        <p class="pricing-description">Everything + personalized mentorship</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Everything in Weekend Intensive</li>
+                        <li>1-on-1 mentorship sessions (4 hours)</li>
+                        <li>Personalized career roadmap</li>
+                        <li>Priority support (WhatsApp)</li>
+                        <li>Advanced design workshops</li>
+                        <li>Client acquisition strategies</li>
+                        <li>Portfolio website setup</li>
+                        <li>Freelance starter kit</li>
+                    </ul>
+                    <button class="btn btn-primary pricing-btn" onclick="initiatePayment('premium')">
+                        Enroll Now
+                    </button>
+                </div>
+
+                <div class="pricing-card scroll-reveal">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Group Package</h3>
+                        <div class="pricing-amount">
+                            <span class="currency">₦</span>
+                            <span class="price">200,000</span>
+                        </div>
+                        <p class="pricing-description">For 3+ people (₦67k per person)</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Everything in Weekend Intensive</li>
+                        <li>Minimum 3 participants</li>
+                        <li>Group discount (₦67,000/person)</li>
+                        <li>Team collaboration projects</li>
+                        <li>Dedicated Slack channel</li>
+                        <li>Group mentorship sessions</li>
+                        <li>Team portfolio review</li>
+                        <li>Certificate for all members</li>
+                    </ul>
+                    <button class="btn btn-primary pricing-btn" onclick="initiatePayment('group')">
+                        Enroll Team
+                    </button>
+                </div>
+            </div>
+
+            <!-- Money Back Guarantee -->
+            <div class="guarantee-section scroll-reveal">
+                <div class="guarantee-icon">🛡️</div>
+                <h3 class="guarantee-title">100% Satisfaction Guarantee</h3>
+                <p class="guarantee-text">Not satisfied after the first day? We'll refund your payment, no questions asked. We're confident you'll love the experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Complete Your Enrollment</h2>
+            <form id="enrollmentForm" class="enrollment-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">WhatsApp Number *</label>
+                    <input type="tel" id="whatsapp" required placeholder="+234 XXX XXX XXXX">
+                </div>
+                <div class="form-group">
+                    <label for="cohort">Preferred Start Date *</label>
+                    <select id="cohort" required>
+                        <option value="">Select a date</option>
+                        <option value="feb-24-25">Feb 24-25, 2024</option>
+                        <option value="mar-02-03">Mar 02-03, 2024</option>
+                        <option value="mar-16-17">Mar 16-17, 2024</option>
+                        <option value="mar-30-31">Mar 30-31, 2024</option>
+                    </select>
+                </div>
+                <input type="hidden" id="packageType">
+                <input type="hidden" id="amount">
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                    Proceed to Payment
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Lius Hub</h3>
+                    <p class="footer-text">Empowering the next generation of Nigerian designers.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="course.html">Course Details</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="portal.html">Student Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lius Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="payment.js"></script>
+</body>
+</html>

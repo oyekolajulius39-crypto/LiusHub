@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Lius Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .portal-guard {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #FAF5FF 0%, #F3E8FF 100%);
+        }
+        .portal-content {
+            max-width: 1200px;
+            margin: 120px auto 60px;
+            padding: 0 2rem;
+        }
+        .portal-header {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 2rem;
+        }
+        .portal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .portal-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+        }
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .schedule-table th,
+        .schedule-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #F3F4F6;
+        }
+        .resource-item {
+            padding: 1rem;
+            background: var(--bg-light);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn-download {
+            background: var(--primary-purple);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="portalGuard" class="portal-guard">
+        <div style="text-align: center;">
+            <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 1rem;">Access Denied</h2>
+            <p style="color: #6B7280; margin-bottom: 2rem;">Please complete your enrollment to access the student portal.</p>
+            <a href="pricing.html" class="btn btn-primary">Enroll Now</a>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar" style="display: none;">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="logo-placeholder.svg" alt="Lius Hub" class="logo-image">
+                    <span class="logo-text">Lius Hub</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="course.html" class="nav-link">Course Details</a>
+                    <a href="portal.html" class="nav-link active">Student Portal</a>
+                    <button onclick="logout()" class="btn btn-secondary" style="padding: 0.5rem 1.5rem;">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="portalContent" class="portal-content" style="display: none;">
+        <div class="portal-header">
+            <h1 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; margin-bottom: 0.5rem;">Welcome, <span id="studentName"></span>!</h1>
+            <p style="color: #6B7280;">Your learning journey starts here</p>
+        </div>
+
+        <div class="portal-grid">
+            <div class="portal-card">
+                <h2 style="font-family: 'Syne', sans-serif; margin-bottom: 1.5rem;">📅 Class Schedule</h2>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Time</th>
+                            <th>Topic</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>9:00 AM</td>
+                            <td>Design Fundamentals</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>11:00 AM</td>
+                            <td>Adobe Photoshop</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>2:00 PM</td>
+                            <td>Adobe Illustrator</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>9:00 AM</td>
+                            <td>Brand Identity</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>2:00 PM</td>
+                            <td>Portfolio Development</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="portal-card">
+                <h2 style="font-family: 'Syne', sans-serif; margin-bottom: 1.5rem;">📚 Course Resources</h2>
+                <div class="resource-item">
+                    <span>Design Principles Guide</span>
+                    <a href="#" class="btn-download">Download</a>
+                </div>
+                <div class="resource-item">
+                    <span>Adobe Suite Shortcuts</span>
+                    <a href="#" class="btn-download">Download</a>
+                </div>
+                <div class="resource-item">
+                    <span>Color Theory Handbook</span>
+                    <a href="#" class="btn-download">Download</a>
+                </div>
+                <div class="resource-item">
+                    <span>Typography Guide</span>
+                    <a href="#" class="btn-download">Download</a>
+                </div>
+                <div class="resource-item">
+                    <span>Project Templates Pack</span>
+                    <a href="#" class="btn-download">Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="portal-card">
+            <h2 style="font-family: 'Syne', sans-serif; margin-bottom: 1.5rem;">🎥 Class Recordings</h2>
+            <p style="color: #6B7280; margin-bottom: 1rem;">Recordings will be available after each session</p>
+            <div class="resource-item">
+                <span>Session 1: Introduction to Design</span>
+                <a href="#" class="btn-download">Watch</a>
+            </div>
+            <div class="resource-item">
+                <span>Session 2: Photoshop Basics</span>
+                <span style="color: #6B7280; font-size: 0.9rem;">Coming Soon</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function checkAccess() {
+            const paymentVerified = localStorage.getItem('liushub-payment-verified');
+            const studentName = localStorage.getItem('liushub-student-name');
+            
+            if (paymentVerified === 'true') {
+                document.getElementById('portalGuard').style.display = 'none';
+                document.getElementById('navbar').style.display = 'block';
+                document.getElementById('portalContent').style.display = 'block';
+                document.getElementById('studentName').textContent = studentName || 'Student';
+            }
+        }
+
+        function logout() {
+            if (confirm('Are you sure you want to logout?')) {
+                localStorage.removeItem('liushub-payment-verified');
+                localStorage.removeItem('liushub-student-email');
+                localStorage.removeItem('liushub-student-name');
+                window.location.reload();
+            }
+        }
+
+        checkAccess();
+    </script>
+</body>
+</html>

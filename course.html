@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details - Lius Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skeleton Loader -->
+    <div id="skeleton-loader" class="skeleton-loader">
+        <div class="skeleton-content">
+            <div class="skeleton-logo"></div>
+            <div class="skeleton-nav">
+                <div class="skeleton-nav-item"></div>
+                <div class="skeleton-nav-item"></div>
+                <div class="skeleton-nav-item"></div>
+            </div>
+            <div class="skeleton-hero">
+                <div class="skeleton-title"></div>
+                <div class="skeleton-subtitle"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="logo-placeholder.svg" alt="Lius Hub" id="logo-img" class="logo-image">
+                    <span class="logo-text">Lius Hub</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="course.html" class="nav-link active">Course Details</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="portal.html" class="nav-link nav-cta">Student Portal</a>
+                </div>
+                <button class="mobile-toggle" id="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Course Hero -->
+    <section class="course-hero">
+        <div class="container">
+            <div class="course-hero-content fade-in">
+                <h1 class="course-hero-title">Weekend Graphic Design<br><span class="highlight">Intensive Bootcamp</span></h1>
+                <p class="course-hero-subtitle">A comprehensive 48-hour program designed to take you from beginner to professional designer in just one weekend.</p>
+                <div class="course-meta">
+                    <div class="meta-item">
+                        <span class="meta-icon">📅</span>
+                        <span class="meta-text">2 Days (Weekend)</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">⏰</span>
+                        <span class="meta-text">48 Hours</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">📍</span>
+                        <span class="meta-text">Hybrid (Online & In-Person)</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">🎓</span>
+                        <span class="meta-text">Certificate Included</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Overview -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="two-column-layout">
+                <div class="content-column">
+                    <h2 class="section-title">What You'll Learn</h2>
+                    <div class="learning-modules">
+                        <div class="module scroll-reveal">
+                            <div class="module-header">
+                                <span class="module-number">01</span>
+                                <h3 class="module-title">Design Fundamentals</h3>
+                            </div>
+                            <p class="module-description">Master the core principles of graphic design including color theory, typography, composition, and visual hierarchy.</p>
+                            <ul class="module-topics">
+                                <li>Color Psychology & Theory</li>
+                                <li>Typography Basics & Font Pairing</li>
+                                <li>Layout & Composition Principles</li>
+                                <li>Visual Hierarchy & Balance</li>
+                            </ul>
+                        </div>
+
+                        <div class="module scroll-reveal">
+                            <div class="module-header">
+                                <span class="module-number">02</span>
+                                <h3 class="module-title">Adobe Creative Suite</h3>
+                            </div>
+                            <p class="module-description">Get hands-on experience with industry-standard tools including Photoshop, Illustrator, and InDesign.</p>
+                            <ul class="module-topics">
+                                <li>Adobe Photoshop for Image Editing</li>
+                                <li>Adobe Illustrator for Vector Graphics</li>
+                                <li>Adobe InDesign for Publications</li>
+                                <li>Workflow Integration & Best Practices</li>
+                            </ul>
+                        </div>
+
+                        <div class="module scroll-reveal">
+                            <div class="module-header">
+                                <span class="module-number">03</span>
+                                <h3 class="module-title">Brand Identity Design</h3>
+                            </div>
+                            <p class="module-description">Learn to create cohesive brand identities including logos, color palettes, and brand guidelines.</p>
+                            <ul class="module-topics">
+                                <li>Logo Design Process & Techniques</li>
+                                <li>Brand Strategy & Positioning</li>
+                                <li>Creating Brand Style Guides</li>
+                                <li>Brand Asset Development</li>
+                            </ul>
+                        </div>
+
+                        <div class="module scroll-reveal">
+                            <div class="module-header">
+                                <span class="module-number">04</span>
+                                <h3 class="module-title">Digital & Print Design</h3>
+                            </div>
+                            <p class="module-description">Create stunning designs for both digital platforms and print media.</p>
+                            <ul class="module-topics">
+                                <li>Social Media Graphics & Templates</li>
+                                <li>Web & UI Design Basics</li>
+                                <li>Print Design & Preparation</li>
+                                <li>File Formats & Export Settings</li>
+                            </ul>
+                        </div>
+
+                        <div class="module scroll-reveal">
+                            <div class="module-header">
+                                <span class="module-number">05</span>
+                                <h3 class="module-title">Portfolio Development</h3>
+                            </div>
+                            <p class="module-description">Build a professional portfolio with real-world projects that showcase your skills.</p>
+                            <ul class="module-topics">
+                                <li>Portfolio Structure & Presentation</li>
+                                <li>Case Study Documentation</li>
+                                <li>Personal Branding</li>
+                                <li>Client Presentation Skills</li>
+                            </ul>
+                        </div>
+
+                        <div class="module scroll-reveal">
+                            <div class="module-header">
+                                <span class="module-number">06</span>
+                                <h3 class="module-title">Business & Career</h3>
+                            </div>
+                            <p class="module-description">Learn the business side of design including pricing, client management, and freelancing.</p>
+                            <ul class="module-topics">
+                                <li>Pricing Your Design Services</li>
+                                <li>Client Communication & Management</li>
+                                <li>Freelancing vs Agency Work</li>
+                                <li>Marketing Your Design Business</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-column">
+                    <div class="sticky-sidebar">
+                        <div class="info-card">
+                            <h3 class="info-card-title">Course Information</h3>
+                            <div class="info-items">
+                                <div class="info-item">
+                                    <span class="info-label">Duration</span>
+                                    <span class="info-value">48 Hours (2 Days)</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Schedule</span>
+                                    <span class="info-value">Saturday & Sunday</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Time</span>
+                                    <span class="info-value">9:00 AM - 9:00 PM</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Level</span>
+                                    <span class="info-value">Beginner to Intermediate</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Class Size</span>
+                                    <span class="info-value">Max 25 Students</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Language</span>
+                                    <span class="info-value">English</span>
+                                </div>
+                            </div>
+                            <a href="pricing.html" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1.5rem;">Enroll Now</a>
+                        </div>
+
+                        <div class="info-card" style="margin-top: 1.5rem;">
+                            <h3 class="info-card-title">What's Included</h3>
+                            <ul class="included-list">
+                                <li>48 hours of intensive training</li>
+                                <li>All course materials & resources</li>
+                                <li>Design templates & assets</li>
+                                <li>Certificate of completion</li>
+                                <li>Lifetime access to recordings</li>
+                                <li>Private student community</li>
+                                <li>Career support & mentorship</li>
+                                <li>Portfolio review sessions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Course Schedule</h2>
+                <p class="section-subtitle">A detailed breakdown of what you'll learn each day</p>
+            </div>
+            <div class="schedule-grid">
+                <div class="schedule-day scroll-reveal">
+                    <div class="day-header">
+                        <h3 class="day-title">Day 1 - Saturday</h3>
+                        <span class="day-subtitle">Foundations & Tools</span>
+                    </div>
+                    <div class="day-sessions">
+                        <div class="session">
+                            <span class="session-time">9:00 AM - 11:00 AM</span>
+                            <h4 class="session-title">Design Fundamentals</h4>
+                            <p class="session-description">Introduction to design principles, color theory, and typography</p>
+                        </div>
+                        <div class="session">
+                            <span class="session-time">11:00 AM - 1:00 PM</span>
+                            <h4 class="session-title">Adobe Photoshop Mastery</h4>
+                            <p class="session-description">Photo editing, manipulation, and retouching techniques</p>
+                        </div>
+                        <div class="session">
+                            <span class="session-time">1:00 PM - 2:00 PM</span>
+                            <h4 class="session-title">Lunch Break</h4>
+                            <p class="session-description">Network with fellow students and instructors</p>
+                        </div>
+                        <div class="session">
+                            <span class="session-time">2:00 PM - 4:00 PM</span>
+                            <h4 class="session-title">Adobe Illustrator Basics</h4>
+                            <p class="session-description">Vector graphics, logo design, and illustration</p>
+                        </div>
+                        <div class="session">
+                            <span class="session-time">4:00 PM - 6:00 PM</span>
+                            <h4 class="session-title">Brand Identity Workshop</h4>
+                            <p class="session-description">Create your first complete brand identity</p>
+                        </div>
+                        <div class="session">
+                            <span class="session-time">6:00 PM - 9:00 PM</span>
+                            <h4 class="session-title">Practical Project Work</h4>
+                            <p class="session-description">Hands-on design projects with instructor feedback</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-day scroll-reveal">
+                    <div class="day-header">
+                        <h3 class="day-title">Day 2 - Sunday</h3>
+                        <span class="day-subtitle">Advanced Skills & Portfolio</span>
+                    </div>
+                    <div class="day-sessions">
+                        <div class="session">
+                            <span class="session-time">9:00 AM - 11:00 AM</span>
+                            <h4 class="session-title">Digital Design for Social Media</h4>
+                            <p class="session-description">Create engaging content for all platforms</p>
+                        </div>
+                        <div class="session">
+                            <span class="session-time">11:00 AM - 1:00 PM</span>
+                            <h4 class="session-title">Print Design & InDesign</h4>
+                            <p class="session-description">Brochures, flyers, and publication design</p>
+                        </div>
+                        <div class="session">
+                            <span class="session-time">1:00 PM - 2:00 PM</span>
+                            <h4 class="session-title">Lunch Break</h4>
+                            <p class="session-description">Continue networking and collaboration</p>
+                        </div>
+                        <div class="session">
+                            <span class="session-time">2:00 PM - 4:00 PM</span>
+                            <h4 class="session-title">Portfolio Development</h4>
+                            <p class="session-description">Build and present your professional portfolio</p>
+                        </div>
+                        <div class="session">
+                            <span class="session-time">4:00 PM - 6:00 PM</span>
+                            <h4 class="session-title">Business of Design</h4>
+                            <p class="session-description">Pricing, clients, and freelancing strategies</p>
+                        </div>
+                        <div class="session">
+                            <span class="session-time">6:00 PM - 9:00 PM</span>
+                            <h4 class="session-title">Final Project & Certification</h4>
+                            <p class="session-description">Complete your capstone project and receive certificate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section class="instructors-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Your Instructors</h2>
+                <p class="section-subtitle">Learn from industry professionals with years of experience</p>
+            </div>
+            <div class="instructors-grid">
+                <div class="instructor-card scroll-reveal">
+                    <div class="instructor-avatar">
+                        <div class="avatar-placeholder">JD</div>
+                    </div>
+                    <h3 class="instructor-name">John Doe</h3>
+                    <p class="instructor-role">Lead Design Instructor</p>
+                    <p class="instructor-bio">10+ years of experience in brand design with clients including Fortune 500 companies. Former Creative Director at leading agencies.</p>
+                </div>
+                <div class="instructor-card scroll-reveal">
+                    <div class="instructor-avatar">
+                        <div class="avatar-placeholder">SM</div>
+                    </div>
+                    <h3 class="instructor-name">Sarah Martinez</h3>
+                    <p class="instructor-role">Digital Design Expert</p>
+                    <p class="instructor-bio">Specialized in social media and digital design. Has worked with over 100 brands to build their online presence.</p>
+                </div>
+                <div class="instructor-card scroll-reveal">
+                    <div class="instructor-avatar">
+                        <div class="avatar-placeholder">AO</div>
+                    </div>
+                    <h3 class="instructor-name">Adebayo Oluwole</h3>
+                    <p class="instructor-role">Print & Publication Specialist</p>
+                    <p class="instructor-bio">Master of print design with extensive experience in editorial and publication design for major magazines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Transform Your Career?</h2>
+                <p class="cta-text">Join our next weekend intensive and start your design journey today</p>
+                <a href="pricing.html" class="btn btn-primary btn-large">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Lius Hub</h3>
+                    <p class="footer-text">Empowering the next generation of Nigerian designers through intensive, practical training.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="course.html">Course Details</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="portal.html">Student Portal</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lius Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
